@@ -1,0 +1,30 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'NativeHybridRNProj' do
+  
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  'Core',
+  'RCTText',
+  'RCTImage',
+  'RCTActionSheet',
+  'RCTGeolocation',
+  'RCTNetwork',
+  'RCTSettings',
+  'RCTVibration',
+  'CxxBridge',
+  'RCTWebSocket',
+  'ART',
+  'RCTAnimation',
+  'RCTBlob',
+  'RCTCameraRoll',
+  'RCTPushNotification',
+  'RCTLinkingIOS',
+  'DevSupport'
+  ]
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  
+end
